@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+
+    &_logo {
+    width: 180px;
+    height: 60px;
+    margin: 20px 0 20px 30px;
+    }
+
+    &_link {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        margin-right: 25px;
+    }
+
+    &_link a {
+        color: $primary-color;
+        text-decoration: none;
+    }
+
+}
+

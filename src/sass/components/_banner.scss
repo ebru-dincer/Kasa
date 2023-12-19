@@ -1,0 +1,22 @@
+.hp-banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+
+    &__image {
+        width: 1200px;
+        height: 223px;
+        border-radius: 25px;
+        filter : brightness(60%);
+        object-fit: cover;
+    }
+
+    &__txt {
+        position: absolute;
+        color: $secondary-color;
+        font-size: 48px;
+        font-weight: 500;
+    }
+}

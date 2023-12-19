@@ -1,0 +1,51 @@
+.hp-rental-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-left: 30px;
+}
+
+.hp-rental-container a {
+    text-decoration: none;
+    color: $secondary-color;
+}
+
+.hp-rental {
+    width: 1180px;
+    border-radius: 25px;
+    background: $background-color;
+    padding: 40px 10px;
+    margin: 0 0 30px 25px;
+
+    &__image {
+        width: 340px;
+        height: 340px;
+        object-fit: cover;
+        border-radius: 10px;
+        // position: relative;
+        // box-shadow: inset 0px -90px 60px -50px rgba(0, 0, 0, 0.5);
+        // z-index: -1;
+    }
+
+    &__txt {
+        position: relative;
+        z-index: 2;
+        color: $secondary-color;
+        font-size: 18px;
+        font-weight: 500;
+        width: 50vh;
+        margin: -70px 0 0 20px ;
+    }
+
+
+}
+
+.shadow {
+    z-index: 1;
+    box-shadow: inset 0px -90px 60px -50px rgba(0, 0, 0, 0.5);
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: -345px;
+}
