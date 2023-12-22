@@ -1,9 +1,9 @@
 
-import Banner from './components/Banner';
 import Header from './components/Header';
 import Home from './pages/Home';
 import Footer from "./components/Footer"
 import './sass/main.css';
+
 
 function App() {
   return (

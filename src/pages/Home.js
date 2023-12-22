@@ -6,9 +6,12 @@ import image from '../assets/image_1.jpg'
 
 
 function Homepage() {
+
+    const tagline = "Chez vous, partout et ailleurs"
+
     return (
     <div className="homepage">
-        <Banner />
+        <Banner image={image} tagline={tagline} />
 
     <section className="hp-rental">
         <LogItem />
