@@ -1,5 +1,5 @@
 import "../sass/main.css"
-import LogItem from "../components/RentalItem"
+import RentalItem from "../components/RentalItem"
 import Banner from "../components/Banner"
 import image from '../assets/image_1.jpg'
 
@@ -13,9 +13,9 @@ function Homepage() {
     <div className="homepage">
         <Banner image={image} tagline={tagline} />
 
-    <section className="hp-rental">
-        <LogItem />
-    </section>
+        <section className="hp-rental">
+        <RentalItem />
+        </section>
         
     </div>
     )

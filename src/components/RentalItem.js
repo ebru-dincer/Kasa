@@ -1,22 +1,25 @@
 import "../sass/main.css"
-import rentalData from "../rental.json"
+import { rentaldata } from "../rentaldata.js"
+import { NavLink } from "react-router-dom";
 
 
 
 function RentalItem({ id, title, cover }) {
 
-    console.log(rentalData)
+    console.log(rentaldata)
 
     return (
         <div className="hp-rental-container">
-        {rentalData.map(({ id, title, cover}) => (
+        {rentaldata.map(({ id, title, cover}) => (
             <div key={id}>
                 <article>  
-                    <a href="#">
+                <NavLink to={`/${id}`} className="hp-rental__link">
+                    {/* <a href="#"> */}
                         <img src={cover} alt="Image d'un logement" className='hp-rental__image'/>
                         <div className="shadow"></div>
                         <h2 className='hp-rental__txt'>{title}</h2>
-                    </a>
+                    {/* </a> */}
+                </NavLink>
                 </article>
             </div>	
         )

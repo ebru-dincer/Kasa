@@ -5,9 +5,8 @@
     margin-left: 30px;
 }
 
-.hp-rental-container a {
-    text-decoration: none;
-    color: $secondary-color;
+.hp-rental__link {
+    text-decoration:  none;
 }
 
 .hp-rental {
@@ -35,6 +34,7 @@
         font-weight: 500;
         width: 50vh;
         margin: -70px 0 0 20px ;
+        // text-decoration: none;
     }
 
 
@@ -49,3 +49,5 @@
     position: relative;
     margin-top: -345px;
 }
+
+

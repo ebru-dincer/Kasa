@@ -1,23 +1,30 @@
 
+.about-dpd-container {
+    width: 900px;
+    margin-left: 190px;
+}
+
 .dropdown-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
+    width: 100%; // à modifier (voir pour créer une div autour des dropdown)
 }
 
 .dropdown-title {
     background: $primary-color;
     color: $secondary-color;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    width: 80%;
+    // width: 100%;
     padding: 0 15px;
     align-items: center;
     border-radius: 5px;
     font-size: 20px;
     font-weight: 500;
+    align-self: stretch;
+
 
     &__image {
         width: 32px;
@@ -32,7 +39,7 @@
     background: $background-color;
     align-items: center;
     display: flex;
-    width: 80%;
+    // width: 100%;
     padding: 0 10px;
     font-weight: 400;
     animation: growDown 700ms ease-in-out forwards;

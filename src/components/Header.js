@@ -7,10 +7,9 @@ function Header() {
     <div className="header">
         <img src={logo} alt='Logo de Kasa' className='header_logo' />
         <div className="header_link">
-            {/* <a href="#" className='link'>Accueil</a> */}
             <NavLink to="/">Accueil</NavLink>
-            {/* <a href="#">À propos</a> */}
             <NavLink to="/about">À propos</NavLink>
+            {/* <NavLink to="/rental">Logement</NavLink> */}
 
         </div>
     </div>

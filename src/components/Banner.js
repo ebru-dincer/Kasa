@@ -6,9 +6,7 @@ function Banner({image, tagline}) {
     <section className="hp-banner">
         <img src={image} alt='Paysage' className='hp-banner__image' />
         {tagline ?
-        <h1 className='hp-banner__txt'>{tagline}</h1> :
-        null
-        }
+        <h1 className='hp-banner__txt'>{tagline}</h1> : null }
     </section>
     )
 }
