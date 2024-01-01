@@ -1,0 +1,25 @@
+.error-page {
+    color: $primary-color;
+    text-align: center;
+
+    &__status {
+        font-size: 250px;
+        font-weight: 700;
+        margin: 100px;
+    }
+
+    &__txt{
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 100px;
+    }
+
+    &__home {
+        display: block;
+        margin-bottom: 100px;
+    }
+
+    &__home:visited {
+        color: $primary-color;  
+    }
+}

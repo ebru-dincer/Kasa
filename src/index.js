@@ -5,12 +5,13 @@ import About from './pages/About';
 import Rental from './pages/Rental';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import ErrorPage from "./pages/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
-
+    element: <App />,
+    errorElement: <ErrorPage />
   },
   {
     path: "/about",
@@ -18,7 +19,8 @@ const router = createBrowserRouter([
   },
   {
     path: "/:id",
-    element: <Rental />
+    element: <Rental />,
+    errorElement: <ErrorPage />
   }
 ])
 

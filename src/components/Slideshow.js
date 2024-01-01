@@ -23,17 +23,24 @@ function Slideshow({ id, pictures, totalIndex }) {
         setCurrentIndex(newIndex);
     }
 
-    // const picture = rentaldata[currentIndex].picture.length;
-    // console.log(picture)
-    // pictures[currentIndex].length}
+    // let [showNav, setShowNav] = useState(false);
+    // if (totalIndex > 1) {
+    //     showNav = true
+    //     setShowNav(showNav);
+    // }
+
+
+  
+    const showNav = totalIndex > 1 ? {} : { display: 'none' }
+    
 
     return (
     <section className="slideshow">
             <div key={id}>
                 <img src={pictures[currentIndex]} alt='Paysage' className='slideshow__image' />
-                <img src={arrowLeft} alt='Flèche gauche' className='slideshow__arrow-left' onClick={goToPrevious} />
-                <img src={arrowRight} alt='Flèche droite' className='slideshow__arrow-right' onClick={goToNext} />
-                <span className="slideshow__index">{currentIndex + 1}/{totalIndex}</span>      
+                <img src={arrowLeft} alt='Flèche gauche' className='slideshow__arrow-left' onClick={goToPrevious} style={showNav} />
+                <img src={arrowRight} alt='Flèche droite' className='slideshow__arrow-right' onClick={goToNext} style={showNav} />
+                <span className="slideshow__index" style={showNav}>{currentIndex + 1}/{totalIndex}</span>      
             </div>	
     </section>
     )
