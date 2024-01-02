@@ -1,5 +1,4 @@
 import "../sass/main.css"
-// import image from "../assets/image_1.jpg"
 import { rentaldata } from "../rentaldata"
 import { useState } from "react"
 import arrowRight from "../assets/arrow_right.png"
@@ -7,7 +6,7 @@ import arrowLeft from "../assets/arrow_left.png"
 
 
 
-function Slideshow({ id, pictures, totalIndex }) {
+function Slideshow({ pictures, totalIndex }) {
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -23,25 +22,16 @@ function Slideshow({ id, pictures, totalIndex }) {
         setCurrentIndex(newIndex);
     }
 
-    // let [showNav, setShowNav] = useState(false);
-    // if (totalIndex > 1) {
-    //     showNav = true
-    //     setShowNav(showNav);
-    // }
-
-
-  
+    totalIndex = pictures.length
     const showNav = totalIndex > 1 ? {} : { display: 'none' }
     
 
     return (
     <section className="slideshow">
-            <div key={id}>
                 <img src={pictures[currentIndex]} alt='Paysage' className='slideshow__image' />
                 <img src={arrowLeft} alt='Flèche gauche' className='slideshow__arrow-left' onClick={goToPrevious} style={showNav} />
                 <img src={arrowRight} alt='Flèche droite' className='slideshow__arrow-right' onClick={goToNext} style={showNav} />
                 <span className="slideshow__index" style={showNav}>{currentIndex + 1}/{totalIndex}</span>      
-            </div>	
     </section>
     )
 }

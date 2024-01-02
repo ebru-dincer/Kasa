@@ -24,6 +24,10 @@ const textContentAbout = [
     },
 ]
 
+/**
+ * 
+ * @returns 
+ */
 function About() {
     return (
     <div className="about">
@@ -32,7 +36,7 @@ function About() {
 
         <div className="about-dpd-container">
           {textContentAbout.map((item) => (
-                <Dropdown title={item.title} content={item.content} />
+                <Dropdown title={item.title} content={item.content} key={item.title} />
             ))}
         </div>
 

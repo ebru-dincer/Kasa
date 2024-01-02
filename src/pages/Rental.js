@@ -15,8 +15,8 @@ function Rental() {
 
     const { id } = useParams()   
     const data = rentaldata.filter ( rental => rental.id === id )[0]
-    console.log(data.rating)
 
+    console.log(data.rating)
 	
     const equipments = data.equipments
     const eqlist = equipments.map(
@@ -26,7 +26,7 @@ function Rental() {
     return (
     <div className="rental">
         <Header />
-        <Slideshow id={data.id} pictures={data.pictures} totalIndex={data.pictures.length}/>
+        <Slideshow pictures={data.pictures}/>
 
         <div className="intro-container-flex">
             {/* PARTIE 1 */}
