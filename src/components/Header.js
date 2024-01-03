@@ -9,8 +9,6 @@ function Header() {
         <div className="header_link">
             <NavLink to="/">Accueil</NavLink>
             <NavLink to="/about">À propos</NavLink>
-            {/* <NavLink to="/rental">Logement</NavLink> */}
-
         </div>
     </div>
     )

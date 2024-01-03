@@ -23,5 +23,8 @@
         text-decoration: none;
     }
 
+    &_link a.active {
+        text-decoration: underline;
+    }
 }
 

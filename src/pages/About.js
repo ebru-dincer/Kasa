@@ -5,6 +5,7 @@ import image from '../assets/image_2.jpg'
 import Dropdown from "../components/Dropdown"
 import Footer from "../components/Footer"
 
+
 const textContentAbout = [
     {
         title : "Fiabilité",
@@ -29,14 +30,15 @@ const textContentAbout = [
  * @returns 
  */
 function About() {
+
     return (
     <div className="about">
         <Header />
         <Banner image={image} />
 
         <div className="about-dpd-container">
-          {textContentAbout.map((item) => (
-                <Dropdown title={item.title} content={item.content} key={item.title} />
+          {textContentAbout.map((item, index) => (
+                <Dropdown title={item.title} content={item.content} key={index} />
             ))}
         </div>
 

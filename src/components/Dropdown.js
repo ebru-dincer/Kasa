@@ -21,7 +21,7 @@ import { useState } from "react"
 function Dropdown(props) {
     return (
         <div>
-                <DropdownItem title={props.title}>
+                <DropdownItem title={props.title} key={props.key}>
                     <DropdownText content={props.content} />
                 </DropdownItem>
         </div>
@@ -70,7 +70,7 @@ function DropdownItem(props) {
 
     return (
         
-        <div className="dropdown-item">
+        <div className="dropdown-item" key={props.key} >
             <div className="dropdown-title"> 
                 <p>{props.title}</p>
                 <img src={arrowTop} alt='flèche vers le haut' className='dropdown-title__image' style={{ transform: rotate, transition: "all 0.2s linear" }} onClick={dropdownEvent}/>      
