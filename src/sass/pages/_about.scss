@@ -1,7 +1,11 @@
 
 .about-dpd-container {
-    width: 900px;
-    margin-left: 15%;
+    // width: 100%;
+    margin: 0 10%;
+
+    @media (max-width: 768px) {
+        margin: 0 3%;
+    }
 }
 
 .dropdown-item {
@@ -10,6 +14,10 @@
     align-items: center;
     margin-bottom: 30px;
     width: 100%;
+
+    @media (max-width: 768px) {
+        margin-bottom: 20px;
+    }
 }
 
 .dropdown-title {
@@ -24,6 +32,9 @@
     font-weight: 500;
     align-self: stretch;
 
+    @media (max-width: 768px) {
+        font-size: 13px;
+    }
 
     &__image {
         width: 32px;
@@ -42,6 +53,10 @@
     font-weight: 400;
     animation: growDown 700ms ease-in-out forwards;
     transform-origin: top center;
+
+    @media (max-width: 768px) {
+        font-size: 13px;
+    }
 }
 
 @keyframes growDown {
