@@ -188,7 +188,7 @@ body {
   background: #F6F6F6;
   align-items: center;
   display: flex;
-  padding: 0 10px;
+  padding: 10px;
   font-weight: 400;
   animation: growDown 700ms ease-in-out forwards;
   transform-origin: top center;
@@ -317,22 +317,51 @@ body {
   align-items: center;
   margin-bottom: 30px;
 }
+@media (max-width: 768px) {
+  .slideshow {
+    margin: 3%;
+  }
+}
 .slideshow__image {
-  width: 1240px;
+  width: 96%;
   height: 415px;
   border-radius: 25px;
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 768px) {
+  .slideshow__image {
+    height: 255px;
+    border-radius: 10px;
+  }
+}
 .slideshow__arrow-left {
   position: absolute;
-  left: 20px;
+  left: 25px;
   bottom: 180px;
+}
+@media (max-width: 768px) {
+  .slideshow__arrow-left {
+    width: 24px;
+    height: 24px;
+    bottom: 230px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 .slideshow__arrow-right {
   position: absolute;
-  right: 20px;
+  right: 25px;
   bottom: 180px;
+}
+@media (max-width: 768px) {
+  .slideshow__arrow-right {
+    width: 24px;
+    height: 24px;
+    bottom: 230px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 .slideshow__index {
   position: absolute;
@@ -342,26 +371,55 @@ body {
   font-size: 18px;
   font-weight: 500;
 }
+@media (max-width: 768px) {
+  .slideshow__index {
+    display: none;
+  }
+}
 
 .rental-intro {
-  margin-left: 20px;
+  margin-left: 30px;
   color: #FF6060;
+}
+@media (max-width: 768px) {
+  .rental-intro {
+    margin: 0 5%;
+  }
 }
 .rental-intro__title {
   font-size: 36px;
   font-weight: 500;
   margin: 0;
 }
+@media (max-width: 768px) {
+  .rental-intro__title {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
 .rental-intro__location {
   margin: 0;
   font-size: 18px;
   font-weight: 500;
 }
+@media (max-width: 768px) {
+  .rental-intro__location {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
 
 .tags-container {
   display: flex;
   gap: 10px;
-  margin-left: 20px;
+  margin-left: 30px;
+}
+@media (max-width: 768px) {
+  .tags-container {
+    margin-left: 20px;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
 }
 
 .rental-tags {
@@ -377,17 +435,48 @@ body {
   margin: 30px 0 10px 0;
   padding: 2px 5px;
 }
+@media (max-width: 768px) {
+  .rental-tags {
+    font-size: 10px;
+    font-weight: 500;
+    width: 84px;
+    height: 18px;
+    border-radius: 5px;
+    margin: 10px 0 0 0;
+  }
+}
 
 .intro-container-flex {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .intro-container-flex {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .host-mobile {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 10px;
+  }
+}
 
 .host {
   display: flex;
   justify-content: flex-end;
-  margin-right: 20px;
+  margin-right: 30px;
   gap: 10px;
+}
+@media (max-width: 768px) {
+  .host {
+    margin-right: 4%;
+  }
 }
 .host__name {
   margin: 10px 0;
@@ -397,18 +486,37 @@ body {
   color: #FF6060;
   text-align: end;
 }
+@media (max-width: 768px) {
+  .host__name {
+    font-size: 12px;
+    margin: 3px 0;
+  }
+}
 .host__picture {
   border-radius: 50%;
   width: 64px;
   height: 64px;
 }
+@media (max-width: 768px) {
+  .host__picture {
+    width: 32px;
+    height: 32px;
+  }
+}
 
 .star-rating {
   display: flex;
   justify-content: flex-end;
-  margin: 30px 20px 0 0;
+  margin: 30px 30px 0 0;
   font-size: 22px;
   gap: 10px;
+}
+@media (max-width: 768px) {
+  .star-rating {
+    font-size: 16px;
+    gap: 5px;
+    margin: 5px 0 0 20px;
+  }
 }
 
 .star_on {
@@ -424,10 +532,27 @@ body {
   justify-content: space-evenly;
   margin-top: 20px;
 }
+@media (max-width: 768px) {
+  .eq-container-flex {
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+  }
+}
 
 .eq-item {
-  width: 600px;
+  width: 47%;
+}
+@media (max-width: 768px) {
+  .eq-item {
+    width: 99%;
+  }
 }
 .eq-item__list {
-  width: 580px;
+  margin: 0;
+  padding: 0 0 0 10px;
+}
+.eq-item__list li {
+  display: inline-block;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

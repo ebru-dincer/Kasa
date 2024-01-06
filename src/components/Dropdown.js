@@ -87,7 +87,7 @@ function DropdownItem(props) {
 function DropdownText(props) {
     return (     
         <div className="dropdown-txt">
-            <p>{props.content}</p>
+            <div>{props.content}</div>
         </div>
     )
 }

@@ -16,7 +16,7 @@ function Rental() {
 
   const equipments = data.equipments;
   const eqlist = equipments.map((element, index) => (
-    <li key={index} className="eq-item__list">
+    <li key={index}>
       {element}
     </li>
   ));
@@ -43,7 +43,7 @@ function Rental() {
         </div>
 
         {/* PARTIE 2 */}
-        <div>
+        <div className="host-mobile">
           {/* PROPRIETAIRE */}
           <Host name={data.host.name} picture={data.host.picture} />
           {/* ETOILES */}
@@ -57,7 +57,7 @@ function Rental() {
           <Dropdown title={"Description"} content={data.description} />
         </div>
         <div className="eq-item">
-          <Dropdown title={"Equipements"} content={eqlist} />
+          <Dropdown title={"Equipements"} content={[<ul className="eq-item__list"> {eqlist} </ul>]} />
         </div>
       </div>
 
