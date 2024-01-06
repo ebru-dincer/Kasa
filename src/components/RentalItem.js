@@ -3,8 +3,6 @@ import { rentaldata } from "../rentaldata.js";
 import { NavLink } from "react-router-dom";
 
 function RentalItem() {
-  console.log(rentaldata);
-
   return (
     <div className="hp-rental-container">
       {rentaldata.map(({ id, title, cover }) => (

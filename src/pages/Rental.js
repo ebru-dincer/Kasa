@@ -23,8 +23,8 @@ function Rental() {
   }
 
   const equipments = data.equipments;
-  const eqlist = equipments.map((element, index) => (
-    <li key={index}>
+  const eqlist = equipments.map((element) => (
+    <li key={element}>
       {element}
     </li>
   ));
@@ -45,7 +45,7 @@ function Rental() {
           {/* TAGS */}
           <section className="tags-container">
             {data.tags.map((tag) => (
-              <RentalTags tag={tag} />
+              <RentalTags tag={tag} key={tag} />
             ))}
           </section>
         </div>
@@ -65,7 +65,7 @@ function Rental() {
           <Dropdown title={"Description"} content={data.description} />
         </div>
         <div className="eq-item">
-          <Dropdown title={"Equipements"} content={[<ul className="eq-item__list"> {eqlist} </ul>]} />
+          <Dropdown title={"Equipements"} content={[<ul className="eq-item__list" key="0"> {eqlist} </ul>]} />
         </div>
       </div>
 
