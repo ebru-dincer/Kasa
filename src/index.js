@@ -7,11 +7,11 @@ import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import ErrorPage from "./pages/Error";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <ErrorPage />
   },
   {
     path: "/about",
@@ -20,7 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/:id",
     element: <Rental />,
-    errorElement: <ErrorPage />
+  },
+  {
+    path: "/error",
+    element: <ErrorPage />
   }
 ])
 
@@ -29,7 +32,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router}/>
-    {/* <App /> */}
   </React.StrictMode>
 );
 

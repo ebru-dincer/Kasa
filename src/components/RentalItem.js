@@ -2,7 +2,7 @@ import "../sass/main.css";
 import { rentaldata } from "../rentaldata.js";
 import { NavLink } from "react-router-dom";
 
-function RentalItem({ id, title, cover }) {
+function RentalItem() {
   console.log(rentaldata);
 
   return (

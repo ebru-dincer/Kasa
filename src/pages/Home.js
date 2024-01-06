@@ -1,21 +1,25 @@
-import "../sass/main.css"
-import RentalItem from "../components/RentalItem"
-import Banner from "../components/Banner"
-import image from '../assets/image_1.jpg'
-
-
+import "../sass/main.css";
+import RentalItem from "../components/RentalItem";
+import Banner from "../components/Banner";
+import image from "../assets/image_1.jpg";
 
 function Homepage() {
-    return (
+  return (
     <div className="homepage">
-        <Banner image={image} tagline={["Chez vous, ", <br className="br-mobile"/>, "partout et ailleurs"]} />
+      <Banner
+        image={image}
+        tagline={[
+          "Chez vous, ",
+          <br className="br-mobile" />,
+          "partout et ailleurs",
+        ]}
+      />
 
-        <section className="hp-rental">
+      <section className="hp-rental">
         <RentalItem />
-        </section>
-        
+      </section>
     </div>
-    )
+  );
 }
 
-export default Homepage
+export default Homepage;

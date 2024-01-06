@@ -3,16 +3,24 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Slideshow from "../components/Slideshow";
 import RentalTags from "../components/RentalTags";
-
-import { useParams } from "react-router-dom";
+import { useNavigate , useParams } from "react-router-dom";
 import { rentaldata } from "../rentaldata";
 import Host from "../components/Host";
 import StarRating from "../components/StarRating";
 import Dropdown from "../components/Dropdown";
+import ErrorPage from "./Error";
+
+
 
 function Rental() {
   const { id } = useParams();
   const data = rentaldata.filter((rental) => rental.id === id)[0];
+
+  const navigate = useNavigate();
+  if (!data) {
+    navigate("/error");
+    return <ErrorPage />
+  }
 
   const equipments = data.equipments;
   const eqlist = equipments.map((element, index) => (
