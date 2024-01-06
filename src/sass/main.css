@@ -217,16 +217,34 @@ body {
 .error-page__status {
   font-size: 250px;
   font-weight: 700;
-  margin: 100px;
+  margin: 5%;
+}
+@media (max-width: 768px) {
+  .error-page__status {
+    font-size: 96px;
+    margin: 25%;
+  }
 }
 .error-page__txt {
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 100px;
 }
+@media (max-width: 768px) {
+  .error-page__txt {
+    font-size: 18px;
+    margin-bottom: 25%;
+  }
+}
 .error-page__home {
   display: block;
   margin-bottom: 100px;
+}
+@media (max-width: 768px) {
+  .error-page__home {
+    font-size: 14px;
+    margin-bottom: 25%;
+  }
 }
 .error-page__home:visited {
   color: #FF6060;
