@@ -2,6 +2,11 @@ import "../sass/main.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
+/**
+ * 
+ * @param {number} star 
+ * @returns <StarRating star={data.rating} />
+ */
 function StarRating({ star }) {
   return (
     <div className="star-rating">

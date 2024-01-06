@@ -5,7 +5,12 @@ import arrowRight from "../assets/arrow_right.png"
 import arrowLeft from "../assets/arrow_left.png"
 
 
-
+/**
+ * 
+ * @param {string} pictures
+ * @param {number} totalIndex
+ * @returns <Slideshow pictures={data.pictures} />
+ */
 function Slideshow({ pictures, totalIndex }) {
 
     const [currentIndex, setCurrentIndex] = useState(0);

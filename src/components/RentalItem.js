@@ -2,6 +2,10 @@ import "../sass/main.css";
 import { rentaldata } from "../rentaldata.js";
 import { NavLink } from "react-router-dom";
 
+/**
+ * 
+ * @returns <RentalItem />
+ */
 function RentalItem() {
   return (
     <div className="hp-rental-container">

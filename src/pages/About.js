@@ -30,7 +30,7 @@ const textContentAbout = [
 
 /**
  *
- * @returns
+ * @returns <About />
  */
 function About() {
   return (

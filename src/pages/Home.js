@@ -5,7 +5,11 @@ import image from "../assets/image_1.jpg";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-function Homepage() {
+/**
+ * 
+ * @returns <Home />
+ */
+function Home() {
   return (
     <>
       <Header />
@@ -30,4 +34,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default Home;

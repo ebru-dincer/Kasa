@@ -1,5 +1,11 @@
 import "../sass/main.css"
 
+/**
+ * 
+ * @param {string} name
+ * @param {string} picture
+ * @returns <Host name={data.host.name} picture={data.host.picture} />
+ */
 function Host({name, picture}) {
     return (
     <section className="host">

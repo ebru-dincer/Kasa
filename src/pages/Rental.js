@@ -11,7 +11,10 @@ import Dropdown from "../components/Dropdown";
 import ErrorPage from "./Error";
 
 
-
+/**
+ * 
+ * @returns <Rental />
+ */
 function Rental() {
   const { id } = useParams();
   const data = rentaldata.filter((rental) => rental.id === id)[0];

@@ -2,6 +2,11 @@ import "../sass/main.css";
 import arrowTop from "../assets/arrow_top.png";
 import { useState } from "react";
 
+/**
+ * 
+ * @param {string} props
+ * @returns <Dropdown title={props.title} content={props.content} key={props.title} />
+ */
 function Dropdown(props) {
   return (
     <div>
@@ -12,6 +17,12 @@ function Dropdown(props) {
   );
 }
 
+
+/**
+ * 
+ * @param {string} props 
+ * @returns <DropdownItem title={props.title} key={props.title} />
+ */
 function DropdownItem(props) {
   const [open, setOpen] = useState(false);
 
@@ -44,6 +55,11 @@ function DropdownItem(props) {
   );
 }
 
+/**
+ * 
+ * @param {string} props 
+ * @returns <DropdownText content={props.content} key={props.content} />
+ */
 function DropdownText(props) {
   return (
     <div className="dropdown-txt" key={props.content}>

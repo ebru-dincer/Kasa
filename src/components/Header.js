@@ -2,6 +2,10 @@ import logo from '../assets/logo_kasa.jpg'
 import "../sass/main.css"
 import { NavLink } from "react-router-dom";
 
+/**
+ * 
+ * @returns <Header />
+ */
 function Header() {
     return (
     <div className="header">

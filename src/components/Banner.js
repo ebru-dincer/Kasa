@@ -1,5 +1,11 @@
 import "../sass/main.css";
 
+/**
+ * 
+ * @param {string} image 
+ * @param {string} tagline 
+ * @returns <Banner />
+ */
 function Banner({ image, tagline }) {
   return (
     <section className="hp-banner">
