@@ -10,8 +10,8 @@ function RentalItem() {
   return (
     <div className="hp-rental-container">
       {rentaldata.map(({ id, title, cover }) => (
-        <div key={id}>
-          <article>
+        // <div >
+          <article key={id}>
             <NavLink to={`/${id}`} className="hp-rental__link">
               <img
                 src={cover}
@@ -22,7 +22,7 @@ function RentalItem() {
               <h2 className="hp-rental__txt">{title}</h2>
             </NavLink>
           </article>
-        </div>
+        // </div>
       ))}
     </div>
   );

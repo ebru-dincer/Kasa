@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-
+    position: relative;
 
     @media (max-width: 768px) {
         margin: 3%;
@@ -24,26 +24,36 @@
 
     &__arrow-left {
         position: absolute;
-        left: 25px;
+        left: 40px;
         bottom: 180px;
+
+        @media (max-width: 1024px) {
+            top: 40%;
+        }
 
         @media (max-width: 768px) {
             width: 24px;
             height: 24px;
-            bottom: 230px;
+            top: 45%;
+            left: 5%;
             object-fit: contain;
         }
     }
 
     &__arrow-right {
         position: absolute;
-        right: 25px;
+        right: 40px;
         bottom: 180px;
+
+        @media (max-width: 1024px) {
+            top: 40%;
+        }
 
         @media (max-width: 768px) {
             width: 24px;
             height: 24px;
-            bottom: 230px;
+            top: 45%;
+            right: 5%;
             object-fit: contain;
         }
     }
@@ -55,6 +65,11 @@
         right: 600px;
         font-size: 18px;
         font-weight: 500;
+
+        @media (max-width: 1024px) {
+            bottom: 5%;
+            right: 48%;
+        }
 
         @media (max-width: 768px) {
             display: none;
@@ -68,7 +83,7 @@
     color: $primary-color;
 
     @media (max-width: 768px) {
-        margin: 0 5%;
+        margin-left: 0;
     }
 
     &__title {
@@ -100,7 +115,7 @@
     margin-left: 30px;
 
     @media (max-width: 768px) {
-        margin-left: 20px;
+        margin-left: 0;
         flex-wrap: wrap;
         gap: 5px;
     }
@@ -136,6 +151,7 @@
     @media (max-width: 768px) {
         justify-content: center;
         flex-direction: column;
+        margin: 0 5%;
     }
 }
 
@@ -157,7 +173,7 @@
     gap: 10px;
 
     @media (max-width: 768px) {
-        margin-right: 4%;
+        margin-right: 0;
     }
 
     &__name {
@@ -171,6 +187,7 @@
         @media (max-width: 768px) {
             font-size: 12px;
             margin: 3px 0;
+            width: 50%;
         }
     }
 
@@ -196,7 +213,7 @@
     @media (max-width: 768px) {
         font-size: 16px;
         gap: 5px;
-        margin: 5px 0 0 20px;
+        margin: 5px 0 0 0;
     }
 }
 
@@ -216,7 +233,7 @@
     @media (max-width: 768px) {
         flex-direction: column;
         align-items: center;
-        margin: 5%;
+        margin: 4%;
     }
 }
 

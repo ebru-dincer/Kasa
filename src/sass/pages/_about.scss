@@ -52,6 +52,7 @@
     font-weight: 400;
     animation: growDown 700ms ease-in-out forwards;
     transform-origin: top center;
+    width: 96%;
 
     @media (max-width: 768px) {
         font-size: 13px;
