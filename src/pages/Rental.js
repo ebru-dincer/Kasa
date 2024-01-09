@@ -13,7 +13,7 @@ import ErrorPage from "./Error";
 
 /**
  * 
- * @returns <Rental />
+ * @returns {jsx} <Rental />
  */
 function Rental() {
   const { id } = useParams();
@@ -68,7 +68,7 @@ function Rental() {
           <Dropdown title={"Description"} content={data.description} />
         </div>
         <div className="eq-item">
-          <Dropdown title={"Equipements"} content={[<ul className="eq-item__list" key="0"> {eqlist} </ul>]} />
+          <Dropdown title={"Equipements"} content={<ul className="eq-item__list"> {eqlist} </ul>} />
         </div>
       </div>
 
