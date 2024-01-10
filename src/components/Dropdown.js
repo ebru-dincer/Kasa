@@ -5,7 +5,7 @@ import { useState } from "react";
 /**
  * 
  * @param {string} props
- * @returns <Dropdown title={props.title} content={props.content} key={props.title} />
+ * @returns {jsx} <Dropdown title={props.title} content={props.content} key={props.title} />
  */
 function Dropdown(props) {
   return (
@@ -21,7 +21,7 @@ function Dropdown(props) {
 /**
  * 
  * @param {string} props 
- * @returns <DropdownItem title={props.title} key={props.title} />
+ * @returns {jsx} <DropdownItem title={props.title} key={props.title} />
  */
 function DropdownItem(props) {
   const [open, setOpen] = useState(false);
@@ -58,7 +58,7 @@ function DropdownItem(props) {
 /**
  * 
  * @param {string} props 
- * @returns <DropdownText content={props.content} key={props.content} />
+ * @returns {jsx} <DropdownText content={props.content} key={props.content} />
  */
 function DropdownText(props) {
   return (

@@ -9,7 +9,7 @@ import arrowLeft from "../assets/arrow_left.png"
  * 
  * @param {string} pictures
  * @param {number} totalIndex
- * @returns <Slideshow pictures={data.pictures} />
+ * @returns {jsx} <Slideshow pictures={data.pictures} />
  */
 function Slideshow({ pictures, totalIndex }) {
 

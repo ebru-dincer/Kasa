@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 
 /**
  * 
- * @returns <Home />
+ * @returns {jsx} <Home />
  */
 function Home() {
   return (

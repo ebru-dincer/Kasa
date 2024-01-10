@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 /**
  * 
- * @returns <ErrorPage />
+ * @returns {jsx} <ErrorPage />
  */
 export default function ErrorPage() {
   return (

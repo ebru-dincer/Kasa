@@ -5,7 +5,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 /**
  * 
  * @param {number} star 
- * @returns <StarRating star={data.rating} />
+ * @returns {jsx} <StarRating star={data.rating} />
  */
 function StarRating({ star }) {
   return (

@@ -3,7 +3,7 @@ import "../sass/main.css"
 
 /**
  * 
- * @returns <Footer />
+ * @returns {jsx} <Footer />
  */
 function Footer() {
     return (

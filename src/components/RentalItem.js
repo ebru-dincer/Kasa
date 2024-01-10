@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 /**
  * 
- * @returns <RentalItem />
+ * @returns {jsx} <RentalItem />
  */
 function RentalItem() {
   return (
