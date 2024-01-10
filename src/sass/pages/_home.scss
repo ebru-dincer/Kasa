@@ -2,12 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-    // margin: 0 0 20px 18px;
     margin: 0 2% 20px 2%;
     justify-content: center;
 
     @media (max-width: 1024px) {
-        // margin-left: 45px;
         gap: 20px;
     }
 
@@ -70,25 +68,20 @@
     }
 
     &__txt {
-        // position: relative;
         position: absolute;
         z-index: 2;
         color: $secondary-color;
         font-size: 18px;
         font-weight: 500;
-        // width: 50vh;
-        // margin: -70px 0 0 20px;
         bottom: 5%;
         left: 5%;
 
         @media (max-width: 1024px) {
-            // width: 40vh;
             text-wrap: balance;
         }
 
         @media (max-width: 768px) {
            text-wrap: balance;
-        //    width: 70vh;
             bottom: 10%;
         }
     }
